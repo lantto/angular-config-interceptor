@@ -29,4 +29,8 @@ module.provider('configInterceptor', function() {
     };
 });
 
+module.config(function($httpProvider) {
+    $httpProvider.interceptors.push('configInterceptor');
+});
+
 })();
