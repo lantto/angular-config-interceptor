@@ -11,12 +11,12 @@ $http service wrapper.
 var app = angular.module('myApp', ['config-interceptor']);
 
 app.config(function(configInterceptorProvider) {
-    configInterceptorProvider.setBaseUrl('http://examplee.com');
+    configInterceptorProvider.setBaseUrl('http://example.com');
 });
 
 app.controller('MyCtrl', function($scope, $http) {
     $http.get('/some-url').success(function(data) { 
-        // Get some data from http://example.com/some-url?foo=bar
+        // Get some data from http://example.com/some-url
     });
 });
 ```
