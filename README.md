@@ -3,8 +3,6 @@ angular-config-interceptor
 
 Interceptor for adding default configurations.
 
-$http service wrapper.
-
 # Basic usage
 
 ```javascript
